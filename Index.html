@@ -4,13 +4,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Css/media-query.css">
     <link rel="stylesheet" href="Css/estilos.css">
-    <title>Presentación</title>
+    <title>Presentación</title> 
     <link rel="icon" type="image/x-icon" href="/img/b.ico">
 </head>
 <body>
+     
+    <section class="home" id="home">
+        <div class="contenido-home">
+      <header>
+      <div class="barra-nav" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i></div>
+
+      <nav class="nav" id="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobremi">Sobre Mi</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#resumen">Resumen</a>
+          <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="logo">
+        C<span>v</span>
+      </div>
+      </header>
+
+
+         <div class="info">
+            <h1><marquee width="50%">Brenda Camaño</marquee></h1>
+            <br>
+            <h2>Estudiante de FrontEnd, Branding y Marketing Digital. </h2>
+         </div>
+
+        
+        <div class="foto">
+            <img src="img/brenda.jpg" alt="">
+        </div>
+        </div>
+    </div>
+        
+    </section>
+
+    <section class="sobremi" id="sobremi">
+        <div class="contenidoSM">
+            <h2 class="titulo1">Sobre Mi</h2>
+            <h3>Data Personal</h3>
+            <p class="especial">Estudiante de desarrollo web, con conocimiento en HTML, CSS y JS. </p>
+        
+           <div class="fila">
+            <div class="col">
+                <i class="fa-solid fa-user"></i>
+                <span class="titulo-detalle"> Perfil</span>
     
+                <p> Mi nombre es Brenda, estoy aprendiendo programación. En este momento
+                    estoy aprendiendo FrontEnd, y mi objetivo es poder ser
+                    FullSatck, y poder trabajar de esto. 
+                </p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span class="titulo-detalle">Ubicación</span>
+                <p> Maipú, Mendoza
+                </p>
+    
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-star"></i>
+                <span class="titulo-detalle"> Intereses </span>
+               <p>Me gustan los videos juegos, escuchar musica, aprender,
+                y pasar tiempo con mi familia.
+               </p>
+    
+            </div>
+           </div>
+        </div>
+    </section>
+    
+    <section class="habilidades" id="habilidades">
+        <div class="contenidoSM">
+            <h2 class="titulo1">Habilidades</h2>
+            <h3> Me especializo en</h3>
+
+            <div class="fila">
+                <div class="col">
+                    <span>HTML & CSS</span>
+                    
+                </div>
+                <div class="col">
+                    <span>JAVASCRIPT</span>
+                    
+            
+        </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="resumen" id="resumen">
+        <div class="contenidoSM">
+            <h2 class="titulo2">Resumen</h2>
+            <h3>Estudios y experiencia</h3> 
+
+            <div class="info">
+                <div class="col"> 
+                    <h1> Educación</h1><i class="fa-solid fa-graduation-cap"></i>
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2021-2022</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Secundario Finalizado sin adeudadar materias. 
+                            </td>
+                        </tr>
+
+                        <td>
+                            <h4>bachiller</h4>
+                            <p> Cens</p>
+                           
+
+                        </td>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2023-2023</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Primeros pasos en el desarrollo front-end.
+                            </td>
+                        </tr>
+
+                        <td>
+                            <h4>Desarrollo FrontEnd</h4>
+                            <p> Argentina Programa 4.0 (2023)</p>
+                            
+
+                        </td>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td class="datos">
+                                <h3>2023-(en curso)</h3>
+                            </td>
+                            <td rowspan="2" class="descripcion">
+                                Desarrollo FullSatck con JavaScript desde cero con HTML, 
+                                CSS, JavaScript, Webpack, NodeJS , Express, etc.
+                                15,5 horas en total
+                            </td>
+                        </tr>
+
+                        <td>
+                            <h4>Fullstack</h4>
+                            <p> Academia Udemi</p>
+                            
+
+                        </td>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="contacto" id="contacto">
+        <div class="contenidoF">
+            <h3>Para más información no dude en comunicarse</h3>
+           <form action="" method="get">
+            <h2>Contacto</h2>
+            <input type="text" name="Nombre" placeholder="Nombre" required>
+            <input type="text" name="correo" placeholder="correo" required>
+            <input type="text" name="telefono" placeholder="telefono">
+            <textarea name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+            <input type="submit" value="ENVIAR" id="boton">
+        </form>
+         
+        </div>
+    </section>
+
+    <script src="Js/JS.js"></script>
+
+    <footer>
+        
+            <div class="social-media">
+                <div class="icono-social">
+                  <a href="https://www.facebook.com/nenah.fallen.angel"> <i class="fab fa-facebook-f"></i></a>
+                  <a href="https://github.com/Bremditah"> <i class="fab fa-github-alt"></i></a>
+                  <a href="https://twitter.com/Bremditah_Brii"> <i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/photography.n.moments"> <i class="fab fa-instagram"></i></a>
+                  <a href="brendacamano@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <div>
+        </footer>
 </body>
 </html>
